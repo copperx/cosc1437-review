@@ -1,7 +1,13 @@
 public class P02_MaxValue {
-    // Return the largest value in a. a has at least one value, and rows can have different lengths.
-    // maxValue({{-3.5, -0.01}, {-7.0}}) returns -0.01
     public static double maxValue(double[][] a) {
-        return 0;
+        double max = a[0][0];
+        for (double[] row : a) {
+            for (double x : row) {
+                if (x > max) {
+                    max = x;
+                }
+            }
+        }
+        return max;
     }
 }
