@@ -1,7 +1,18 @@
 public class P09_CountNumbers {
-    // Return how many items Integer.parseInt can convert without an exception.
-    // countNumbers({"12", "abc", "-5", "3.5"}) returns 2
     public static int countNumbers(String[] items) {
-        return 0;
+        return helper(items, 0);
+    }
+
+    private static int helper(String[] items, int index) {
+        if (items == null || index >= items.length) {
+            return 0;
+        }
+        int current = 0;
+        try {
+            Integer.parseInt(items[index]);
+            current = 1;
+        } catch (NumberFormatException e) {
+        }
+        return current + helper(items, index + 1);
     }
 }
