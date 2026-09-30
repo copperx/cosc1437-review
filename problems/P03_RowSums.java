@@ -9,5 +9,6 @@ public class P03_RowSums {
             sums[i] = currentSum;
         }
         return sums;
+        
     }
 }

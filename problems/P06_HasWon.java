@@ -14,7 +14,6 @@ public class P06_HasWon {
         if (board[0][2] == player && board[1][1] == player && board[2][0] == player) {
             return true;
         }
-
         return false;
     }
 }

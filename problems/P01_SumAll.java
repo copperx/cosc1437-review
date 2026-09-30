@@ -8,5 +8,6 @@ public class P01_SumAll {
         }
         
         return sum;
+        
     }
 }
