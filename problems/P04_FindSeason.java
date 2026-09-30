@@ -1,8 +1,15 @@
 public class P04_FindSeason {
-    // Each row of table is {month, season}. Return the season of month, ignoring upper/lower case.
-    // Return "not found" if month is not in the table.
-    // findSeason({{"January", "Winter"}, {"July", "Summer"}}, "july") returns "Summer"
     public static String findSeason(String[][] table, String month) {
-        return null;
+        if (table == null || month == null) {
+            return "not found";
+        }
+        for (String[] row : table) {
+            if (row != null && row.length >= 2 && row[0] != null) {
+                if (row[0].equalsIgnoreCase(month)) {
+                    return row[1];
+                }
+            }
+        }
+        return "not found";
     }
 }
