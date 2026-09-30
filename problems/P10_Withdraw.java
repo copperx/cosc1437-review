@@ -4,10 +4,14 @@ public class P10_Withdraw {
     // Throw an InsufficientFundsException with a message if amount is more than balance.
     // First give InsufficientFundsException (in its own file) a constructor that takes the message.
     public static double withdraw(double balance, double amount) {
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Withdrawal amount must be positive.");
+        }
         if (amount > balance) {
-            throw new InsufficientFundsException("Insufficient funds");
+            throw new InsufficientFundsException("Amount is more than balance ");
         }
         return balance - amount;
+    }
     
     }
-}
+

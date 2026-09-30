@@ -13,10 +13,10 @@ public class P15_IsPalindrome {
         }
         return isPalindrome(s.substring(1, s.length() - 1));
     }
-}
 
-public static void main(String [] args){
+    public static void main(String [] args){
     String s = "cocacola";
     System.out.println(isPalindrome(s));
+    }
 }
 

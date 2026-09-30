@@ -18,4 +18,18 @@ public class P04_FindSeason {
         }
         
     }
-
+    public static void main (String [] args){
+        String [][] sesons = {
+            {"January", "Winter"},
+            {"February", "Spring"},
+            {"March", "Spring"},
+            {"April", "Spring"},
+            {"May", "Spring"},
+            {"June", "Summer"},
+            {"July", "Summer"},
+            {"August", "Autum"},
+            {"September", "Autum"},
+            {"November", "Autum"},
+            {"December", "Winter"},
+        }
+    }
