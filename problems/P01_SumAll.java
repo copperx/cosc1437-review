@@ -2,6 +2,14 @@ public class P01_SumAll {
     // Return the sum of all the numbers in a. Rows can have different lengths.
     // sumAll({{1, 2}, {3}}) returns 6
     public static int sumAll(int[][] a) {
-        return 0;
+        int sum = 0;
+        for(int i = 0; i < a.length; i++)
+        {
+            for (int j = 0; j < a[i].length; j++)
+            {
+                return += value;
+            }
+        }
+        return sum;
     }
 }
