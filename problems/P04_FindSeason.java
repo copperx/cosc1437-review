@@ -3,6 +3,7 @@ public class P04_FindSeason {
     // Return "not found" if month is not in the table.
     // findSeason({{"January", "Winter"}, {"July", "Summer"}}, "july") returns "Summer"
     public static String findSeason(String[][] table, String month) {
+        char[][] = (["January"]["February"])
         return null;
     }
 }
