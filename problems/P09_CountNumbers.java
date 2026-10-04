@@ -4,11 +4,14 @@ public class P09_CountNumbers {
     public static int countNumbers(String[] items) {
         int n = 0;
         for (int i = 0; i < items.length; i++) {
-            int x = Integer.parseInt(items[i]);
-            if (x == (int)x) {
+            try {
+                int x = Integer.parseInt(items[i]);
                 n++;
-            }
+        } catch (NumberFormatException e) {
+
         }
+        }
+
         return n;
     }
 }
